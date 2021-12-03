@@ -3,11 +3,13 @@
 #include <dlfcn.h>
 
 int main() {
-  void *handle = dlopen("./libdl1.so", RTLD_LAZY);
+  void *handle = dlopen("./libdl-gloop.so", RTLD_LAZY);
+
+  sleep(5);
 
   dlclose(handle);
 
-  sleep(2);
+  sleep(5);
 
   return 0;
 }
