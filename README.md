@@ -1,14 +1,11 @@
 # crash-samples
 Crash samples in C/C++
 
-| Name | Dependencies | Description |
-| :-------- | :-------- | :-------- |
-| [destructed-twice](destructed-twice) | | global destructed twice |
-| [global-qthread](global-qthread) | qt, libc | global QThread segv |
-| [corrupt-stack](corrupt-stack) | dl, pthread | segv with '??' callstack |
-| [quit-gmain-loop](quit-gmain-loop) | dl, pthread, glib-2.0 | GMainLoop segv on dlclose |
-| [rfcapi-test](rfcapi-test) | [rfcapi](https://code.rdkcentral.com/r/admin/repos/rdk/components/generic/rfc) | rfcapi overflow |
-| [thread-terminate](thread-terminate) | pthread | thread terminate call stack |
+| Name | Signature |
+| :-------- | :-------- |
+| [__cxa_pure_virtual](__cxa_pure_virtual) | __cxa_pure_virtual/abort |
+| [corrupted](corrupted) | ?? |
+| [terminate](terminate) | std::terminate/abort/std::thread::~thread/__cxa_throw |
 
 # build
 The table below lists ways to build
