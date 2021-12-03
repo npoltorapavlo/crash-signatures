@@ -10,6 +10,7 @@ add_executable(__terminate-thread __terminate-thread.cpp)
 add_executable(__terminate-thread-detach __terminate-thread-detach.cpp)
 add_executable(__terminate-throw __terminate-throw.cpp)
 
-link_libraries(Threads::Threads)
+target_link_libraries(__terminate-thread PRIVATE Threads::Threads)
+target_link_libraries(__terminate-thread-detach PRIVATE Threads::Threads)
 
 install(TARGETS DESTINATION bin)

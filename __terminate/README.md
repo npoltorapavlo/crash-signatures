@@ -1,6 +1,6 @@
 # __terminate
 
-std::terminate/std::__terminate/abort/__cxa_throw/~thread
+std::terminate/abort/std::thread::~thread/__cxa_throw
 
 > If the thread is joinable when destroyed, terminate() is called. (<https://www.cplusplus.com/reference/thread/thread/~thread/>)
 
@@ -13,7 +13,18 @@ SIGABRT
 abort
 std::__terminate
 std::terminate
-~thread
+std::thread::~thread
+```
+```shell script
+$ ./__terminate-thread 
+terminate called without an active exception
+
+(gdb) bt
+SIGABRT
+__GI_abort
+??
+std::terminate
+std::thread::~thread
 ```
 
 > After a call to this function, the thread object becomes non-joinable and can be destroyed safely. (http://www.cplusplus.com/reference/thread/thread/detach/)
@@ -27,11 +38,21 @@ std::terminate
 ```shell script
 $ ./__terminate-throw 
 libc++abi: terminating with uncaught exception of type int
-Abort trap: 6
 
 (lldb) bt
 SIGABRT
 abort
 std::__terminate
+__cxa_throw
+```
+```shell script
+$ ./__terminate-throw 
+terminate called after throwing an instance of 'int'
+
+(gdb) bt
+SIGABRT
+__GI_abort
+??
+std::terminate
 __cxa_throw
 ```
