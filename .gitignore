@@ -32,6 +32,6 @@ thread-terminate/thread-terminate
 __cxa_pure_virtual/__cxa_pure_virtual-constructor
 __cxa_pure_virtual/__cxa_pure_virtual-deleted
 __cxa_pure_virtual/__cxa_pure_virtual-destructor
-__terminate/__terminate-thread
-__terminate/__terminate-throw
-__terminate/__terminate-thread-detach
+terminate/terminate-thread
+terminate/terminate-throw
+terminate/terminate-thread-detach
