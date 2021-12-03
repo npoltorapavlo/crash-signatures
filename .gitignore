@@ -31,3 +31,5 @@ corrupted/corrupted-gloop
 corrupted/corrupted-pthread
 corrupted/libdl-gloop.so
 corrupted/libdl-pthread.so
+corrupted/libdl-gloop.dylib
+corrupted/libdl-pthread.dylib

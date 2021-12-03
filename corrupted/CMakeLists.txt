@@ -20,8 +20,6 @@ target_link_libraries(dl-pthread PRIVATE Threads::Threads)
 
 target_include_directories(dl-gloop PRIVATE ${GLIB_INCLUDE_DIRS})
 
-target_link_libraries(dl-gloop PRIVATE ${GLIB_LIBRARIES})
-
-link_directories(${GLIB_LIBRARY_DIRS})
+target_link_libraries(dl-gloop PRIVATE ${GLIB_LDFLAGS})
 
 install(TARGETS DESTINATION bin)
