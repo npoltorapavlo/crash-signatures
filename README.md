@@ -6,6 +6,7 @@ Crash samples in C/C++
 | [__cxa_pure_virtual](__cxa_pure_virtual) | __cxa_pure_virtual/abort |
 | [corrupted](corrupted) | ?? |
 | [terminate](terminate) | std::terminate/abort/std::thread::~thread/__cxa_throw |
+| [double-free](double-free) | "double free detected" |
 
 # build
 The table below lists ways to build
