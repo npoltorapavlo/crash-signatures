@@ -1,6 +1,6 @@
 # __cxa_pure_virtual
 
-__cxa_pure_virtual/abort
+`__cxa_pure_virtual/abort`
 
 > The __cxa_pure_virtual function is an error handler that is invoked when a pure virtual function is called.
 

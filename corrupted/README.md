@@ -1,6 +1,6 @@
 # corrupted
 
-??
+`??`
 
 ```shell script
 $ ./corrupted-pthread

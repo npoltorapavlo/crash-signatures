@@ -1,6 +1,6 @@
 # terminate
 
-std::terminate/abort/~thread/__cxa_throw/__clang_call_terminate
+`std::terminate/abort, ~thread, __cxa_throw, __clang_call_terminate`
 
 > If the thread is joinable when destroyed, terminate() is called. (<https://www.cplusplus.com/reference/thread/thread/~thread/>)
 
