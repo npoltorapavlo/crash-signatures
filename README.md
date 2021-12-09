@@ -7,6 +7,7 @@ Crash samples in C/C++
 | [corrupted](corrupted) | ?? |
 | [terminate](terminate) | std::terminate/abort/std::thread::~thread/__cxa_throw |
 | [double-free](double-free) | "double free detected" |
+| [missing-return-statement](missing-return-statement) | undefined behavior |
 
 # build
 The table below lists ways to build

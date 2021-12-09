@@ -29,3 +29,4 @@ corrupted/libdl-gloop.so
 corrupted/libdl-pthread.so
 corrupted/libdl-gloop.dylib
 corrupted/libdl-pthread.dylib
+missing-return-statement/missing-return-statement
