@@ -1,6 +1,6 @@
 # double-free
 
-"double free detected"
+__cxa_finalize destroys a global twice
 
 ```shell script
 ./double-free-global 
