@@ -30,3 +30,5 @@ corrupted/libdl-pthread.so
 corrupted/libdl-gloop.dylib
 corrupted/libdl-pthread.dylib
 missing-return-statement/missing-return-statement
+terminate/terminate-throw-destructor
+terminate/terminate-throw-stack-unwinding

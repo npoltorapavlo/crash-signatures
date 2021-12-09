@@ -56,3 +56,31 @@ __GI_abort
 std::terminate
 __cxa_throw
 ```
+
+> Post C++11 destructors are by default `noexcept(true)` and
+> this will (by default) call terminate if an exception is
+> escapes the destructor.
+
+```shell script
+$ ./terminate-throw-noexcept
+libc++abi: terminating with uncaught exception of type std::exception: std::exception
+
+(lldb) bt
+SIGABRT
+std::terminate
+__clang_call_terminate
+ClassWithThrowInDestructor::~ClassWithThrowInDestructor
+```
+
+> If a destructor called during stack unwinding exits with an exception, std::terminate is called.
+
+```shell script
+$ ./terminate-throw-stack-unwinding 
+catch first
+libc++abi: terminating with uncaught exception of type std::exception: std::exception
+
+(lldb) bt
+SIGABRT
+std::terminate
+__clang_call_terminate
+```
