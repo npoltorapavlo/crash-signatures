@@ -32,3 +32,4 @@ corrupted/libdl-pthread.dylib
 missing-return-statement/missing-return-statement
 terminate/terminate-throw-destructor
 terminate/terminate-throw-stack-unwinding
+race-condition/race-condition-assignment

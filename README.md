@@ -8,6 +8,7 @@ Crash samples in C/C++
 | [terminate](terminate) | `std::terminate/abort, ~thread, __cxa_throw, __clang_call_terminate` |
 | [double-free](double-free) | __cxa_finalize destroys a global twice |
 | [missing-return-statement](missing-return-statement) | undefined behavior |
+| [race-condition](race-condition) | race condition |
 
 # build
 The table below lists ways to build
