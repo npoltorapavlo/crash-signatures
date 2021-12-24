@@ -9,6 +9,7 @@ Crash samples in C/C++
 | [double-free](double-free) | __cxa_finalize destroys a global twice |
 | [missing-return-statement](missing-return-statement) | undefined behavior |
 | [race-condition](race-condition) | race condition |
+| [static-initialization-order](static-initialization-order) | `exit/__run_exit_handlers` |
 
 # build
 The table below lists ways to build
