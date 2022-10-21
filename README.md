@@ -10,6 +10,7 @@ Crash samples in C/C++
 | [missing-return-statement](missing-return-statement) | undefined behavior |
 | [race-condition](race-condition) | race condition |
 | [static-initialization-order](static-initialization-order) | `exit/__run_exit_handlers` |
+| [M_realloc_insert](M_realloc_insert) | `std::vector<std::__cxx11::basic_string...>::_M_realloc_insert` |
 
 # build
 The table below lists ways to build
