@@ -3,14 +3,13 @@ Crash samples in C/C++
 
 | Name | Signature |
 | :-------- | :-------- |
-| [__cxa_pure_virtual](__cxa_pure_virtual) | `__cxa_pure_virtual/abort` |
-| [corrupted](corrupted) | `??` |
-| [terminate](terminate) | `std::terminate/abort, ~thread, __cxa_throw, __clang_call_terminate` |
-| [double-free](double-free) | __cxa_finalize destroys a global twice |
+| [__cxa_finalize](__cxa_finalize) | `__cxa_finalize` |
+| [__cxa_pure_virtual](__cxa_pure_virtual) | `__cxa_pure_virtual/SIGABRT` |
+| [__run_exit_handlers](__run_exit_handlers) | `__run_exit_handlers` |
+| [_M_realloc_insert](_M_realloc_insert) | `std::vector<...>::_M_realloc_insert/SIGSEGV` |
+| [corrupted](corrupted) | `??/SIGSEGV` |
 | [missing-return-statement](missing-return-statement) | undefined behavior |
-| [race-condition](race-condition) | race condition |
-| [static-initialization-order](static-initialization-order) | `exit/__run_exit_handlers` |
-| [M_realloc_insert](M_realloc_insert) | `std::vector<std::__cxx11::basic_string...>::_M_realloc_insert` |
+| [std-terminate](std-terminate) | `std::terminate/SIGABRT` |
 
 # build
 The table below lists ways to build
