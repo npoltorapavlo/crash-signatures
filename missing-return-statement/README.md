@@ -1,6 +1,6 @@
 # missing-return-statement 
 
-undefined behavior
+> undefined behavior
 
 ```shell script
 $ ./missing-return-statement 
