@@ -1,5 +1,5 @@
-# crash-samples
-Crash samples in C/C++
+# crash-signatures
+Crash-signatures in C/C++
 
 | Name | Signature |
 | :-------- | :-------- |
@@ -17,4 +17,4 @@ The table below lists ways to build
 | Type | Example |
 | :-------- | :-------- |
 | cmake | `git clean -fdx && cmake . && make` |
-| yocto | `devtool add --autorev crash-samples "https://github.com/npoltorapavlo/crash-samples.git;branch=main" && devtool build crash-samples` |
+| yocto | `devtool add --autorev crash-signatures "https://github.com/npoltorapavlo/crash-signatures.git;branch=main" && devtool build crash-signatures` |
