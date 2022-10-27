@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.3)
 
-project(crash-samples)
+project(crash-signatures)
 
 option(__cxa_finalize "Include __cxa_finalize." ON)
 option(corrupted "Include corrupted." ON)
