@@ -1,5 +1,5 @@
 # crash-signatures
-Crash-signatures in C/C++
+Crash signatures in C/C++
 
 | Name | Signature |
 | :-------- | :-------- |
