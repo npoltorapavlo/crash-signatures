@@ -23,3 +23,7 @@ __cxa_finalize/libdl1.a
 __cxa_finalize/libdl2.so
 __cxa_finalize/libdl3.so
 corrupted/libdl4.so
+
+globals-linkage/globals-linkage
+globals-linkage/libdl5.so
+globals-linkage/libdl6.so
