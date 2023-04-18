@@ -28,5 +28,6 @@ external-linkage/libdl1.a
 external-linkage/libdl2.so
 external-linkage/libdl3.so
 
+address-sanitizer/address-sanitizer
 
 
