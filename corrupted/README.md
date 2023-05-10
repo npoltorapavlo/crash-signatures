@@ -1,5 +1,6 @@
 # corrupted
 
-`??/SIGSEGV`
+`??/SIGSEGV/SEGV_MAPERR`
 
-A callstack with missing address ("??") can be an address in a library that has been unloaded.
+Address is not mapped into the address space of the application.
+This can result from unloading lib, or dereferencing a null or corrupted pointer.
