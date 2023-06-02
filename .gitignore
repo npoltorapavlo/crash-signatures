@@ -15,8 +15,8 @@ _deps
 
 __cxa_pure_virtual/__cxa_pure_virtual
 _M_realloc_insert/_M_realloc_insert
-corrupted/corrupted
-corrupted/libdl4.so
+segv_maperr/segv_maperr
+segv_maperr/libdl4.so
 external-linkage/external-linkage
 external-linkage/libdl5.so
 external-linkage/libdl6.so
